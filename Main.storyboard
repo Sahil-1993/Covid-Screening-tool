@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eJc-KF-bUd">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RONA-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="covid_screening_tool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="273-aK-yuz">
+                                <rect key="frame" x="5" y="244" width="365" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="APv-ZU-Mfa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="41"/>
+                                <color key="textColor" red="0.08235294118" green="0.1270588235" blue="0.52941176469999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="ICh-8T-uEc">
+                                <rect key="frame" x="0.0" y="44" width="375" height="956"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38W-v9-qZB">
+                                        <rect key="frame" x="0.0" y="0.0" width="379" height="793"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Covid Screening Tool" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDG-zb-ddS">
+                                                <rect key="frame" x="8" y="10" width="363" height="39"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="SoQ-W6-pjJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter FullName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TuS-vW-dQf">
+                                                <rect key="frame" x="8" y="64" width="363" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="2zL-Lm-424"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Department" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k2J-xA-SP3">
+                                                <rect key="frame" x="8" y="113" width="363" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="cq8-wX-Azl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Employee Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZP-5F-hBu">
+                                                <rect key="frame" x="8" y="211" width="363" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="Cga-0d-LZM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Shift time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SAu-g8-Jcp">
+                                                <rect key="frame" x="8" y="162" width="363" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="tfj-dQ-A7a"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer the following questions:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAv-Gg-y8U">
+                                                <rect key="frame" x="8" y="255" width="363" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="4pX-fk-08J"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Do you have any of  the  covid-19  symptoms such as cough, runny  nose, sore muscles, fever, headache, etc?" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NS4-cK-dsb">
+                                                <rect key="frame" x="8" y="307" width="363" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="72" id="zvN-mO-aMc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1le-VU-uq3">
+                                                <rect key="frame" x="8" y="389" width="177.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <state key="normal" title="Yes">
+                                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="action_symptoms:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNP-Tx-Q8e"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="SJL-U5-ehd">
+                                                <rect key="frame" x="193.5" y="389" width="177.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <state key="normal" title="No">
+                                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="action_symptoms:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qgo-8l-99q"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Have you travelled out of Canada in last 14 days?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kt5-2L-wpz">
+                                                <rect key="frame" x="8" y="428" width="363" height="52"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52" id="OgI-1S-rBO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Aeb-O0-ba3">
+                                                <rect key="frame" x="8" y="490" width="177.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <state key="normal" title="Yes">
+                                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="action_travelled:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oCh-kw-lGg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aqy-3D-QZX">
+                                                <rect key="frame" x="193.5" y="490" width="177.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <state key="normal" title="No">
+                                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="action_travelled:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gr9-jG-f0p"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dqI-Nu-mHN">
+                                                <rect key="frame" x="8" y="603" width="177.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <state key="normal" title="Yes">
+                                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="action_closecontact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mCa-jh-ed8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vpR-Cu-WmI">
+                                                <rect key="frame" x="193.5" y="603" width="177.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <state key="normal" title="No">
+                                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="action_closecontact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pI6-WC-wpS"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Have you been in close contact of a person suffering from covid-19 ?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sG1-al-wug">
+                                                <rect key="frame" x="8" y="529" width="363" height="66"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="66" id="EQd-Z8-C4V"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJI-8g-57C">
+                                                <rect key="frame" x="66.5" y="732" width="246" height="51"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="51" id="7JE-sT-zGK"/>
+                                                    <constraint firstAttribute="width" constant="246" id="TW4-cG-bEM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="19"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="action_submitresponse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ojZ-6Y-Rt0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="SJL-U5-ehd" secondAttribute="trailing" constant="8" id="1J4-7S-8Ji"/>
+                                            <constraint firstItem="vpR-Cu-WmI" firstAttribute="height" secondItem="dqI-Nu-mHN" secondAttribute="height" id="216-KQ-Q1x"/>
+                                            <constraint firstItem="vpR-Cu-WmI" firstAttribute="width" secondItem="dqI-Nu-mHN" secondAttribute="width" id="2Qf-c3-vcp"/>
+                                            <constraint firstItem="aqy-3D-QZX" firstAttribute="leading" secondItem="Aeb-O0-ba3" secondAttribute="trailing" constant="8" id="2Tc-q6-tp8"/>
+                                            <constraint firstItem="1le-VU-uq3" firstAttribute="top" secondItem="NS4-cK-dsb" secondAttribute="bottom" constant="10" id="2qi-ou-9xm"/>
+                                            <constraint firstItem="NS4-cK-dsb" firstAttribute="leading" secondItem="38W-v9-qZB" secondAttribute="leading" constant="8" id="7OU-dg-0cF"/>
+                                            <constraint firstItem="NS4-cK-dsb" firstAttribute="top" secondItem="uAv-Gg-y8U" secondAttribute="bottom" constant="8" id="8xs-EC-IfB"/>
+                                            <constraint firstItem="uAv-Gg-y8U" firstAttribute="top" secondItem="MZP-5F-hBu" secondAttribute="bottom" constant="10" id="9Cu-Lk-zWB"/>
+                                            <constraint firstItem="Aeb-O0-ba3" firstAttribute="top" secondItem="kt5-2L-wpz" secondAttribute="bottom" constant="10" id="DQE-0d-syB"/>
+                                            <constraint firstItem="vpR-Cu-WmI" firstAttribute="leading" secondItem="dqI-Nu-mHN" secondAttribute="trailing" constant="8" id="FiW-29-dIE"/>
+                                            <constraint firstAttribute="trailing" secondItem="uAv-Gg-y8U" secondAttribute="trailing" constant="8" id="GUi-nV-sgz"/>
+                                            <constraint firstAttribute="trailing" secondItem="kt5-2L-wpz" secondAttribute="trailing" constant="8" id="GWR-sT-nn9"/>
+                                            <constraint firstAttribute="trailing" secondItem="MZP-5F-hBu" secondAttribute="trailing" constant="8" id="Hbf-nO-XvQ"/>
+                                            <constraint firstItem="sG1-al-wug" firstAttribute="leading" secondItem="38W-v9-qZB" secondAttribute="leading" constant="8" id="K85-ZT-8Kd"/>
+                                            <constraint firstItem="SJL-U5-ehd" firstAttribute="top" secondItem="NS4-cK-dsb" secondAttribute="bottom" constant="10" id="KBq-Mr-wCa"/>
+                                            <constraint firstItem="pDG-zb-ddS" firstAttribute="leading" secondItem="38W-v9-qZB" secondAttribute="leading" constant="8" id="MOx-JN-big"/>
+                                            <constraint firstItem="sG1-al-wug" firstAttribute="top" secondItem="Aeb-O0-ba3" secondAttribute="bottom" constant="10" id="OlC-xm-QzV"/>
+                                            <constraint firstItem="SJL-U5-ehd" firstAttribute="leading" secondItem="1le-VU-uq3" secondAttribute="trailing" constant="8" id="Q8y-mK-mFM"/>
+                                            <constraint firstAttribute="trailing" secondItem="pDG-zb-ddS" secondAttribute="trailing" constant="8" id="RO5-Kt-AVf"/>
+                                            <constraint firstItem="TuS-vW-dQf" firstAttribute="top" secondItem="pDG-zb-ddS" secondAttribute="bottom" constant="15" id="Rqz-3U-ELX"/>
+                                            <constraint firstItem="MZP-5F-hBu" firstAttribute="leading" secondItem="38W-v9-qZB" secondAttribute="leading" constant="8" id="SRL-6Y-kIh"/>
+                                            <constraint firstItem="SJL-U5-ehd" firstAttribute="height" secondItem="1le-VU-uq3" secondAttribute="height" id="SXf-po-x0m"/>
+                                            <constraint firstItem="kt5-2L-wpz" firstAttribute="leading" secondItem="38W-v9-qZB" secondAttribute="leading" constant="8" id="TMZ-MC-VqU"/>
+                                            <constraint firstItem="DJI-8g-57C" firstAttribute="centerX" secondItem="38W-v9-qZB" secondAttribute="centerX" id="TTp-ho-ydk"/>
+                                            <constraint firstAttribute="trailing" secondItem="TuS-vW-dQf" secondAttribute="trailing" constant="8" id="Tmp-kO-Ge1"/>
+                                            <constraint firstItem="vpR-Cu-WmI" firstAttribute="top" secondItem="sG1-al-wug" secondAttribute="bottom" constant="8" id="UJF-Y5-f7Q"/>
+                                            <constraint firstItem="k2J-xA-SP3" firstAttribute="leading" secondItem="38W-v9-qZB" secondAttribute="leading" constant="8" id="UaH-P8-L7d"/>
+                                            <constraint firstItem="SJL-U5-ehd" firstAttribute="width" secondItem="1le-VU-uq3" secondAttribute="width" id="UhX-8y-vwg"/>
+                                            <constraint firstItem="DJI-8g-57C" firstAttribute="top" secondItem="dqI-Nu-mHN" secondAttribute="bottom" constant="100" id="V09-Ry-hOj"/>
+                                            <constraint firstAttribute="trailing" secondItem="SAu-g8-Jcp" secondAttribute="trailing" constant="8" id="VWF-UR-fS3"/>
+                                            <constraint firstAttribute="trailing" secondItem="k2J-xA-SP3" secondAttribute="trailing" constant="8" id="Vm8-Wc-t8b"/>
+                                            <constraint firstAttribute="trailing" secondItem="sG1-al-wug" secondAttribute="trailing" constant="8" id="W4q-6I-0Zm"/>
+                                            <constraint firstItem="MZP-5F-hBu" firstAttribute="top" secondItem="SAu-g8-Jcp" secondAttribute="bottom" constant="15" id="WdG-Pg-XbI"/>
+                                            <constraint firstAttribute="bottom" secondItem="DJI-8g-57C" secondAttribute="bottom" priority="251" constant="10" id="Xtb-yh-Is4"/>
+                                            <constraint firstItem="SAu-g8-Jcp" firstAttribute="top" secondItem="k2J-xA-SP3" secondAttribute="bottom" constant="15" id="Yfa-JI-ZZd"/>
+                                            <constraint firstItem="kt5-2L-wpz" firstAttribute="top" secondItem="1le-VU-uq3" secondAttribute="bottom" constant="10" id="Ywq-MN-yyd"/>
+                                            <constraint firstItem="aqy-3D-QZX" firstAttribute="top" secondItem="kt5-2L-wpz" secondAttribute="bottom" constant="10" id="d9z-ZG-kWl"/>
+                                            <constraint firstItem="dqI-Nu-mHN" firstAttribute="leading" secondItem="38W-v9-qZB" secondAttribute="leading" constant="8" id="edV-jH-BpB"/>
+                                            <constraint firstItem="aqy-3D-QZX" firstAttribute="width" secondItem="Aeb-O0-ba3" secondAttribute="width" id="fCe-3x-lFf"/>
+                                            <constraint firstItem="dqI-Nu-mHN" firstAttribute="top" secondItem="sG1-al-wug" secondAttribute="bottom" constant="8" id="fXa-4f-Jhu"/>
+                                            <constraint firstItem="uAv-Gg-y8U" firstAttribute="leading" secondItem="38W-v9-qZB" secondAttribute="leading" constant="8" id="h4q-V2-u7c"/>
+                                            <constraint firstAttribute="trailing" secondItem="vpR-Cu-WmI" secondAttribute="trailing" constant="8" id="hKB-K6-IIg"/>
+                                            <constraint firstAttribute="trailing" secondItem="aqy-3D-QZX" secondAttribute="trailing" constant="8" id="mQK-AV-Hlv"/>
+                                            <constraint firstItem="SAu-g8-Jcp" firstAttribute="leading" secondItem="38W-v9-qZB" secondAttribute="leading" constant="8" id="mv1-76-6QO"/>
+                                            <constraint firstItem="1le-VU-uq3" firstAttribute="leading" secondItem="38W-v9-qZB" secondAttribute="leading" constant="8" id="nCG-HB-zJW"/>
+                                            <constraint firstItem="k2J-xA-SP3" firstAttribute="top" secondItem="TuS-vW-dQf" secondAttribute="bottom" constant="15" id="nDP-d8-b5S"/>
+                                            <constraint firstItem="TuS-vW-dQf" firstAttribute="leading" secondItem="38W-v9-qZB" secondAttribute="leading" constant="8" id="qAh-Qe-SAw"/>
+                                            <constraint firstItem="Aeb-O0-ba3" firstAttribute="leading" secondItem="38W-v9-qZB" secondAttribute="leading" constant="8" id="qk7-iI-sSD"/>
+                                            <constraint firstItem="aqy-3D-QZX" firstAttribute="height" secondItem="Aeb-O0-ba3" secondAttribute="height" id="vhB-42-eLs"/>
+                                            <constraint firstItem="pDG-zb-ddS" firstAttribute="top" secondItem="38W-v9-qZB" secondAttribute="top" constant="10" id="ylW-TW-ntn"/>
+                                            <constraint firstAttribute="trailing" secondItem="NS4-cK-dsb" secondAttribute="trailing" constant="8" id="z1M-hZ-ZfK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="38W-v9-qZB" firstAttribute="leading" secondItem="ICh-8T-uEc" secondAttribute="leading" id="0P3-Bn-1k6"/>
+                                    <constraint firstItem="38W-v9-qZB" firstAttribute="top" secondItem="ICh-8T-uEc" secondAttribute="top" id="0hk-1C-vFH"/>
+                                    <constraint firstItem="38W-v9-qZB" firstAttribute="height" secondItem="ICh-8T-uEc" secondAttribute="height" priority="250" id="AHN-Lf-GiO"/>
+                                    <constraint firstAttribute="trailing" secondItem="38W-v9-qZB" secondAttribute="trailing" constant="-4" id="F2W-QZ-7wu"/>
+                                    <constraint firstAttribute="bottom" secondItem="38W-v9-qZB" secondAttribute="bottom" id="Qye-NA-pk4"/>
+                                    <constraint firstItem="38W-v9-qZB" firstAttribute="width" secondItem="ICh-8T-uEc" secondAttribute="width" multiplier="1.01067" id="mn8-OR-2qv"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="273-aK-yuz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="3dh-T9-HMt"/>
+                            <constraint firstItem="ICh-8T-uEc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6pM-9Q-SIf"/>
+                            <constraint firstItem="273-aK-yuz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="AQm-eW-poW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="273-aK-yuz" secondAttribute="bottom" priority="250" constant="417" id="K6h-JX-DdA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="273-aK-yuz" secondAttribute="trailing" constant="5" id="UFa-qv-NIp"/>
+                            <constraint firstItem="ICh-8T-uEc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="W2D-by-AYa"/>
+                            <constraint firstItem="ICh-8T-uEc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zb7-EU-6V8"/>
+                            <constraint firstItem="273-aK-yuz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="abE-Fd-xKF"/>
+                            <constraint firstItem="ICh-8T-uEc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="q0j-p4-0yh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RONA" id="cai-dT-PXW"/>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="btnno_ques1" destination="SJL-U5-ehd" id="alK-eT-YXE"/>
+                        <outlet property="btnno_ques2" destination="aqy-3D-QZX" id="48n-BG-GGN"/>
+                        <outlet property="btnno_ques3" destination="vpR-Cu-WmI" id="VeZ-ss-pOH"/>
+                        <outlet property="btnyes_ques1" destination="1le-VU-uq3" id="aOz-4I-DP4"/>
+                        <outlet property="btnyes_ques2" destination="Aeb-O0-ba3" id="wqi-dV-z2E"/>
+                        <outlet property="btnyes_ques3" destination="dqI-Nu-mHN" id="93H-yG-7WU"/>
+                        <outlet property="contentview" destination="38W-v9-qZB" id="qAs-Sl-qb4"/>
+                        <outlet property="lbl_Thanlyou" destination="273-aK-yuz" id="uAj-x5-WPV"/>
+                        <outlet property="scrollview" destination="ICh-8T-uEc" id="a8Q-Qk-ZXx"/>
+                        <outlet property="textfield_date" destination="SAu-g8-Jcp" id="vCL-kw-QAK"/>
+                        <outlet property="textfield_department" destination="k2J-xA-SP3" id="GQT-3s-5Ji"/>
+                        <outlet property="txtfield_id" destination="MZP-5F-hBu" id="QeS-3X-nWC"/>
+                        <outlet property="txtfield_name" destination="TuS-vW-dQf" id="k38-7e-3Sg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="391.19999999999999" y="-46.776611694152926"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Imk-sB-KgA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eJc-KF-bUd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cQ8-AT-vRJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZOI-cQ-9S3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQp-of-axh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-548" y="-46.326836581709152"/>
+        </scene>
+    </scenes>
+</document>

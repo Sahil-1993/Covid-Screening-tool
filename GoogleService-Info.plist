@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1029318302573-f5ctlm5fmfhd3k1bvi66r0j212gjr6vl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1029318302573-f5ctlm5fmfhd3k1bvi66r0j212gjr6vl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDcPq0ZXtAVomeb9iOKIWKM00IT0JT6DVo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1029318302573</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>sahilArora.covid-screening-tool</string>
+	<key>PROJECT_ID</key>
+	<string>covid-screening-tool-5d3a0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>covid-screening-tool-5d3a0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1029318302573:ios:b2ad9b933fa3f3d80c9864</string>
+	<key>DATABASE_URL</key>
+	<string>https://covid-screening-tool-5d3a0.firebaseio.com</string>
+</dict>
+</plist>
